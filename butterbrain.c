@@ -233,9 +233,9 @@ int init(int argc, char** argv){
 
   mem = (int*) calloc(memsize, sizeof(int));
   ptr = mem;
-  fseek(file, 0, SEEK_END); // seek to end of file
-  fsize = ftell(file); // get current file pointer
-  fseek(file, 0, SEEK_SET); // seek back to beginning of fil
+  fseek(file, 0, SEEK_END); 
+  fsize = ftell(file); 
+  fseek(file, 0, SEEK_SET); 
   code = (char*) malloc(fsize * sizeof(char));
   start = code;
   char op;
